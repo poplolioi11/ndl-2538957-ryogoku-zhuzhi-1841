@@ -10,4 +10,5 @@ VALIDATION.json
 book.json
 book.tei.xml
 book.txt
+collation.json
 verify.py

@@ -12,10 +12,10 @@
 """Offline, standard-library verifier for the NDL2538957 public text package.
 
 Usage:
-  python3 package-tools/verify.py PUBLIC_PACKAGE
-  python3 package-tools/verify.py --self-test
-  python3 package-tools/verify.py PUBLIC_PACKAGE --self-test
-  python3 package-tools/verify.py PUBLIC_PACKAGE --tei-schema tei_all.rng \
+  python3 verify.py PUBLIC_PACKAGE
+  python3 verify.py --self-test
+  python3 verify.py PUBLIC_PACKAGE --self-test
+  python3 verify.py PUBLIC_PACKAGE --tei-schema tei_all.rng \
       --cff-schema cff.schema.json
 
 Defaults: book.json, book.txt, book.tei.xml, SHA256SUMS.
@@ -67,8 +67,8 @@ DEFAULT_FILES = {
     "CHANGELOG.md", ".gitignore", "metadata.json", "manifest.json",
     "public-files.json", "PUBLIC-FILES.txt", "rights.json",
     "LICENSES/0BSD.txt", "LICENSES/CC-BY-4.0.txt", "LICENSES/PDM-1.0.txt",
-    "schema/book.schema.json", "metadata/provenance.json",
-    "package-tools/verify.py", "verify.py",
+    "schema/book.schema.json", "metadata/provenance.json", "CONTRIBUTING.md", "PROVENANCE.md", "VALIDATION.json", "collation.json",
+    "verify.py", "verify.py",
 }
 TEXT_SUFFIXES = {".json", ".txt", ".xml", ".md", ".cff", ".py", ".rng"}
 BAD_NAMES = re.compile(r"(?:^|[/_-])(?:screenshots?|prompts?|transcripts?|credentials?|secrets?)(?:[._/-]|$)", re.I)
@@ -537,7 +537,9 @@ def self_test():
         base.mkdir()
         write_fixture(base)
         sums(base)
-        verify_core(base, names)
+        positive = verify_core(base, names)
+        need(positive["anchor_checks"] == {"existing_target_references": 1, "explicitly_unresolved_unverified": 1},
+             "SELF_TEST", "Unresolved anchor must remain explicitly unverified in the report")
         for name, expected, mutate in tests:
             trial = Path(temporary) / name
             shutil.copytree(base, trial)

@@ -1,40 +1,197 @@
 {
   "status": "passed",
-  "version": "v0.1.0",
-  "source_scan_coverage": "18/18 attempted; first reading, independent review not incorporated",
-  "core_checks": [
-    "JSON/TXT/TEI exact Unicode and gap roundtrip",
-    "source SHA256 and exact official source URLs",
-    "unique IDs, uncertainty indexes, anchor references",
-    "public file allowlist and SHA256 closure",
-    "DOCTYPE/entity rejected before XML parse"
-  ],
-  "negative_test_cases_passed": 15,
-  "schemas": [
+  "version": "v0.2.0",
+  "date": "2026-10-24",
+  "timezone": "Asia/Taipei",
+  "source_scan_coverage": "18/18 fixed source scans; covers and blanks included",
+  "core": {
+    "status": "passed",
+    "scans": 18,
+    "units": 641,
+    "public_files": 14,
+    "verified_hashes": 13,
+    "anchor_checks": {
+      "existing_target_references": 410,
+      "explicitly_unresolved_unverified": 12
+    },
+    "checks": [
+      "JSON identity, fixed source hash and 18-page coverage",
+      "unique unit ids and scan order",
+      "Unicode code-point uncertainty indexes; resolved anchor reference/index integrity",
+      "explicitly unresolved anchors retained without reference/index claims",
+      "all □ have uncertainty records",
+      "exact JSON/TXT/TEI text, gaps, unit order and page references",
+      "DOCTYPE/entity rejection before XML parsing",
+      "public allowlist and SHA256SUMS closure"
+    ],
+    "limitations": [
+      "No character accuracy or independent-review claim is verified.",
+      "The artifact/privacy screen detects specified file types, names and literal patterns; it is not a human content review."
+    ]
+  },
+  "self_test": {
+    "status": "passed",
+    "positive": "non-BMP, decomposed Unicode, XML reserved characters, □, empty text, unknown gap, null column, explicitly unresolved anchor",
+    "negative_tests": [
+      {
+        "case": "change-character",
+        "status": "rejected",
+        "check": "TXT_TEXT_MISMATCH"
+      },
+      {
+        "case": "drop-unit",
+        "status": "rejected",
+        "check": "TXT_UNIT_COUNT"
+      },
+      {
+        "case": "swap-unit",
+        "status": "rejected",
+        "check": "TXT_ORDER"
+      },
+      {
+        "case": "source-hash",
+        "status": "rejected",
+        "check": "SOURCE_HASH"
+      },
+      {
+        "case": "manifest-url",
+        "status": "rejected",
+        "check": "SOURCE_MANIFEST_URL"
+      },
+      {
+        "case": "source-page-url",
+        "status": "rejected",
+        "check": "SOURCE_PAGE_URL"
+      },
+      {
+        "case": "invented-zero-column",
+        "status": "rejected",
+        "check": "COLUMN_INDEX"
+      },
+      {
+        "case": "unresolved-anchor-position",
+        "status": "rejected",
+        "check": "ANCHOR_UNRESOLVED"
+      },
+      {
+        "case": "unresolved-anchor-status",
+        "status": "rejected",
+        "check": "ANCHOR_UNRESOLVED"
+      },
+      {
+        "case": "unresolved-anchor-origin",
+        "status": "rejected",
+        "check": "ANCHOR_UNRESOLVED"
+      },
+      {
+        "case": "missing-normal-anchor",
+        "status": "rejected",
+        "check": "ANCHOR_REF"
+      },
+      {
+        "case": "normal-anchor-position",
+        "status": "rejected",
+        "check": "ANCHOR_INDEX"
+      },
+      {
+        "case": "uncertainty-index",
+        "status": "rejected",
+        "check": "UNCERTAINTY_INDEX"
+      },
+      {
+        "case": "duplicate-id",
+        "status": "rejected",
+        "check": "DUPLICATE_ID"
+      },
+      {
+        "case": "XXE",
+        "status": "rejected",
+        "check": "XML_UNSAFE"
+      }
+    ]
+  },
+  "official_schemas": [
     {
-      "name": "TEI P5 4.12.0 tei_all RNG",
-      "url": "https://www.tei-c.org/Vault/P5/4.12.0/xml/tei/custom/schema/relaxng/tei_all.rng",
-      "sha256": "b0f115095ead2ccc6933aa3365c6f4a82cba3b2ec7eee7f76bb616d7a63b7e48",
+      "schema": "TEI Relax NG",
       "status": "passed",
-      "acquisition": "fixed existing cache; this run official host timeout, not claimed fresh download"
+      "schema_sha256": "b0f115095ead2ccc6933aa3365c6f4a82cba3b2ec7eee7f76bb616d7a63b7e48",
+      "diagnostic": "PACKAGE/book.tei.xml validates"
     },
     {
-      "name": "CFF 1.2.0 official schema",
-      "url": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
-      "sha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b",
+      "schema": "CFF",
+      "status": "passed",
+      "schema_sha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b"
+    }
+  ],
+  "schema_acquisition": {
+    "TEI": "fixed existing4.12.0 cache; this run official host timeout; not claimed fresh download",
+    "CFF": "fixed official1.2.0 schema"
+  },
+  "integration_checks": {
+    "status": "passed",
+    "physical_event_rows": 19,
+    "physical_events": 170,
+    "role_recovery": "76 fixed-id roles restored from initial6; 19 mark rows remain reading-marks",
+    "all_event_text_ranges_checked": 547,
+    "event_uncertainties_reindexed": 32,
+    "native_xywh_boxes_checked": 46,
+    "explicitly_undetermined_anchors_preserved": 12,
+    "terminal_existing_units_receiving_top_level_gaps": 5,
+    "unknown_extent_placeholder_anchors_represented_without_one_character_claim": 3,
+    "scan4_incorrect_initial_regions_replaced_by_reviewed_geometry": 3,
+    "controller_key_export_findings": [
+      "11-l7 separate 飛",
+      "15-l6 忽得",
+      "12-r1 逾盟/免晴"
+    ],
+    "limits": "These are structural consistency and faithful-export tests, not fresh character adjudication."
+  },
+  "readme_commands_tested": [
+    {
+      "command": "python3 verify.py . --self-test",
+      "status": "passed"
+    },
+    {
+      "command": "python3 verify.py . --whitelist PUBLIC-FILES.txt --self-test",
+      "status": "passed"
+    },
+    {
+      "command": "python3 verify.py . --whitelist PUBLIC-FILES.txt --self-test --tei-schema TEI_SCHEMA --cff-schema CFF_SCHEMA",
       "status": "passed"
     }
   ],
-  "manual_release_checks": {
-    "rights": "NDL PDM +1841 printed edition + no modern text copied",
-    "source_scope": "full18-frame fixed source,34 visible book surfaces",
-    "public_identity": "poplolioi11／一卦 yigua.art",
-    "no_collection_images": true,
-    "no_private_workflow_or_credentials": true
+  "controller_adoption": {
+    "status": "accepted-for-honest-AI-reviewed-release-with-unresolved-readings",
+    "limits": "All input images/layers attempted by initial and independent readers, with blind stamp addenda dated after the main blind stage; no expert certification. Controller did not personally reread every glyph and does not claim that.",
+    "final_release_format_acceptance": "pending controller inspection after this package preparation"
   },
-  "limitations": [
-    "Format verification does not establish character accuracy.",
-    "Pattern checks do not replace manual content review.",
-    "Initial edition retains unresolved readings; not an expert critical edition."
-  ]
+  "controller_evidence_hash_audit": {
+    "references_checked": 3833,
+    "distinct_evidence_files": 217,
+    "mismatches": 0,
+    "unavailable_named_evidence": 0,
+    "scope": "Only explicit file/hash pairs were checked; not a glyph accuracy test"
+  },
+  "public_verifier_sha256": "f93cecb6c4f38a1f224ef58ba2d0455d55bc148c27e084d4326d8608c08aac9f",
+  "publication_performed": false,
+  "limits": [
+    "Format and schema verification do not establish character accuracy.",
+    "Evidence hash checks are not a character accuracy test.",
+    "No human expert certification or complete personal controller rereading is claimed.",
+    "Formal publication is outside this preparation task."
+  ],
+  "controller_final_acceptance": {
+    "status": "accepted-for-publication-with-unresolved-readings",
+    "source_scope": "18/18 fixed source frames; complete attempted source coverage, not every character deciphered",
+    "review_scope": "All batch alignment and source/input integrity records reviewed; selected critical image passages rechecked; no claim of personal rereading of every glyph or expert certification",
+    "evidence_integrity": {
+      "references_checked": 3833,
+      "distinct_files": 217,
+      "mismatches": 0,
+      "missing": 0
+    },
+    "rights_scope": "1841 printed source and NDL PDM/reuse policy; independent pure-text transcription, no modern edited text copied, no source images packaged",
+    "privacy_scope": "All14 public files reviewed against the fixed content scope and allowlist; specified literal checks passed. No private workflow, credentials or private user identity included.",
+    "public_signature": "poplolioi11／一卦 yigua.art"
+  }
 }
