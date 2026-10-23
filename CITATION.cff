@@ -1,14 +1,14 @@
 cff-version: 1.2.0
-message: "請引用本資料版本與單位ID，並另引NDL原件；AI複核不等於專家定本。"
+message: "請引用本資料DOI、版本與單位ID，並另引NDL原件；AI複核不等於專家定本。"
 type: dataset
 title: "両國竹枝（1841）：NDL2538957 分層影像轉錄與校勘"
 authors:
   - name: "poplolioi11／一卦 yigua.art"
 version: "v0.2.0"
 date-released: "2026-10-24"
-url: "https://github.com/poplolioi11/ndl-2538957-ryogoku-zhuzhi-1841/releases/tag/v0.2.0"
-repository-code: "https://github.com/poplolioi11/ndl-2538957-ryogoku-zhuzhi-1841"
-license: CC-BY-4.0
+doi: "10.5281/zenodo.23605862"
+url: "https://doi.org/10.5281/zenodo.23605862"
+repository-artifact: "https://github.com/poplolioi11/ndl-2538957-ryogoku-zhuzhi-1841"
 abstract: "歷史正文公有領域；原創說明與編排CC BY4.0；驗證程式0BSD。不含館藏影像。18幀來源完整嘗試，保留疑字、未知字數與未定錨點。主控有限度採納，不是本人逐字重讀或專家定本。館藏DOI10.11501/2538957不是資料新DOI。"
 references:
   - type: book

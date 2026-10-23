@@ -163,7 +163,7 @@
   "controller_adoption": {
     "status": "accepted-for-honest-AI-reviewed-release-with-unresolved-readings",
     "limits": "All input images/layers attempted by initial and independent readers, with blind stamp addenda dated after the main blind stage; no expert certification. Controller did not personally reread every glyph and does not claim that.",
-    "final_release_format_acceptance": "pending controller inspection after this package preparation"
+    "final_release_format_acceptance": "accepted at v0.2.0 publication; metadata maintenance does not add image review"
   },
   "controller_evidence_hash_audit": {
     "references_checked": 3833,
@@ -173,12 +173,12 @@
     "scope": "Only explicit file/hash pairs were checked; not a glyph accuracy test"
   },
   "public_verifier_sha256": "f93cecb6c4f38a1f224ef58ba2d0455d55bc148c27e084d4326d8608c08aac9f",
-  "publication_performed": false,
+  "publication_performed": true,
   "limits": [
     "Format and schema verification do not establish character accuracy.",
     "Evidence hash checks are not a character accuracy test.",
     "No human expert certification or complete personal controller rereading is claimed.",
-    "Formal publication is outside this preparation task."
+    "The original format and image acceptance records predate publication; subsequent metadata maintenance does not imply additional image review."
   ],
   "controller_final_acceptance": {
     "status": "accepted-for-publication-with-unresolved-readings",
@@ -193,5 +193,15 @@
     "rights_scope": "1841 printed source and NDL PDM/reuse policy; independent pure-text transcription, no modern edited text copied, no source images packaged",
     "privacy_scope": "All14 public files reviewed against the fixed content scope and allowlist; specified literal checks passed. No private workflow, credentials or private user identity included.",
     "public_signature": "poplolioi11／一卦 yigua.art"
+  },
+  "post_publication_metadata_update": {
+    "date": "2026-10-24",
+    "scope": "Zenodo citation and documentation backfill only; original v0.1.0/v0.2.0 tags and archives unchanged",
+    "version_doi": "10.5281/zenodo.23605862",
+    "concept_doi": "10.5281/zenodo.23605861",
+    "zenodo_record": "https://zenodo.org/records/23605862",
+    "corpus_tei_collation_unchanged": true,
+    "additional_image_review_performed": false,
+    "cff_licensing": "Single CC-BY field removed; layer-specific rights remain explicit in abstract and LICENSE.md"
   }
 }
