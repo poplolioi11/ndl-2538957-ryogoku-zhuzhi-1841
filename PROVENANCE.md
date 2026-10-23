@@ -1,0 +1,11 @@
+# Provenance
+
+Work: 両国竹枝 / source glyph 両國竹枝. Creator 玉岡道人（森玉岡，1798–1853）. NDL bibliographic ID000007327370, PID2538957, shelfmark842-68; catalogue date 天保12跋, printed material. Source title page reads 辛丑仲春新鐫／両國竹枝／陽田吟社藏板. [Author authority](https://www2.ic.daito.ac.jp/oukodou/gallery/pic-1887.html). [岩瀬文庫別藏本目錄](https://adeac.jp/iwasebunko/catalog/mp01185000) corroborates1841 engraving and50 Han poems; it supplies no transcription here.
+
+Source DOI https://doi.org/10.11501/2538957 ; catalogue and manifest linked in README. Acquisition: normal public Commons download, 72,987,030 bytes; SHA1 acdeb2b96ac6ed5843c5170093b0befa4fbb8914; SHA256 dedf984dfbd1facd3575559c505ef52dc1e8d79f1978a6092f44b5d669c02a21. Commons PD-scan / PD-Japan, independently supported by1841 published edition, author dates and NDL item PDM. No rights clearance is inferred from access alone. Modern editions and platform text are outside this grant and were not copied.
+
+The fixed18-page PDF matches18 official canvases. Full-frame sequence includes both outer covers, inner covers, all intervening contents and terminal matter. Scan1 and18 show one outer surface each; scans2–17 show facing surfaces:34 visible book surfaces, conservative upper bound36. This supports full digital-item coverage; it does not prove that no historical leaf ever went missing. Whole source rather than a selection is represented. Language: Hanwen main text with Japanese reading marks; catalogue language jpn, subject 漢詩.
+
+Renders were made from the same fixed PDF using system PDFKit; base frames3600×3347, high-resolution detail approximately7237×6729. Crops preserve a mapping to those frames. No rendering, OCR or model creates missing source strokes. Capture rulers, colour cards, modern scan labels and recognizable reverse show-through are excluded from ancient text, with coverage notes retained. Undated source stamps remain a separate layer and uncertain script is left unresolved.
+
+Version v0.1.0: complete first reading attempt from images; no independent review claim for this version. Fixed input fingerprints are inbook.json; they identify source reading artifacts without exposing private workflow. Public identity: poplolioi11／一卦 yigua.art. No expert certification, no global-first claim, no image redistribution. Source library is not a collaborator or endorser.

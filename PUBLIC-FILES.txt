@@ -1,0 +1,13 @@
+CHANGELOG.md
+CITATION.cff
+CONTRIBUTING.md
+LICENSE.md
+PROVENANCE.md
+PUBLIC-FILES.txt
+README.md
+SHA256SUMS
+VALIDATION.json
+book.json
+book.tei.xml
+book.txt
+verify.py

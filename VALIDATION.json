@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "version": "v0.1.0",
+  "source_scan_coverage": "18/18 attempted; first reading, independent review not incorporated",
+  "core_checks": [
+    "JSON/TXT/TEI exact Unicode and gap roundtrip",
+    "source SHA256 and exact official source URLs",
+    "unique IDs, uncertainty indexes, anchor references",
+    "public file allowlist and SHA256 closure",
+    "DOCTYPE/entity rejected before XML parse"
+  ],
+  "negative_test_cases_passed": 15,
+  "schemas": [
+    {
+      "name": "TEI P5 4.12.0 tei_all RNG",
+      "url": "https://www.tei-c.org/Vault/P5/4.12.0/xml/tei/custom/schema/relaxng/tei_all.rng",
+      "sha256": "b0f115095ead2ccc6933aa3365c6f4a82cba3b2ec7eee7f76bb616d7a63b7e48",
+      "status": "passed",
+      "acquisition": "fixed existing cache; this run official host timeout, not claimed fresh download"
+    },
+    {
+      "name": "CFF 1.2.0 official schema",
+      "url": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
+      "sha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b",
+      "status": "passed"
+    }
+  ],
+  "manual_release_checks": {
+    "rights": "NDL PDM +1841 printed edition + no modern text copied",
+    "source_scope": "full18-frame fixed source,34 visible book surfaces",
+    "public_identity": "poplolioi11／一卦 yigua.art",
+    "no_collection_images": true,
+    "no_private_workflow_or_credentials": true
+  },
+  "limitations": [
+    "Format verification does not establish character accuracy.",
+    "Pattern checks do not replace manual content review.",
+    "Initial edition retains unresolved readings; not an expert critical edition."
+  ]
+}
