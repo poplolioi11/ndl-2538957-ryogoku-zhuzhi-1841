@@ -1,5 +1,11 @@
 # 両國竹枝 · NDL2538957 · v0.2.0
 
+## 摘要 / Abstract
+
+本資料集封存日本國立國會圖書館藏NDL2538957、玉岡道人（森玉岡／森謙）1841年《両國竹枝》的全冊影像轉錄與AI複核成果。v0.2.0涵蓋18影像幀、34個可見書面（保守上限36），以初錄、獨立AI視讀與差異裁決嘗試，形成641個定位單位及保留不確定讀法的JSON、TXT、TEI XML與公開校讀紀錄，供檢索、引用與後續校訂。主控僅於明示範圍採納及核查關鍵影像，未重新辨讀每字；疑字與未知字數區域仍在，AI複核不構成人類專家定本，亦不承諾由公開包完整重跑原圖處理。
+
+This dataset archives full-volume image transcription and AI review of the 1841 《両國竹枝》 by 玉岡道人 (森玉岡／森謙), using National Diet Library item NDL2538957. Version 0.2.0 covers 18 image frames and 34 visible book surfaces (conservative upper bound 36). Initial transcription, independent AI visual reading and attempted disagreement adjudication produced 641 located units in JSON, TXT, TEI XML and public review records for retrieval, citation and further correction. The coordinating reviewer adopted decisions and checked key images only within stated bounds, without rereading every character. Unresolved readings and unknown-length regions remain. AI review is not an expert human edition, and complete rerunning of image processing from the public package is not promised.
+
 玉岡道人《両國竹枝》，天保十二年跋（1841）刊本，國立國會圖書館藏，索書號842-68。整理署名：**poplolioi11／一卦 yigua.art**。版本日期：2026-10-24（Asia/Taipei）。
 
 本版整合全冊初錄、獨立讀圖、逐差及高風險處回圖裁定的五份固定成果。主控已有限度採納：核對輸入與對齊覆蓋，回看關鍵圖證；**主控沒有親自逐字重讀所有字，本版仍是保留未解的AI複核版，並非專家定本**。本版已通過主控的格式、來源指紋與公開內容檢查；v0.1.0 初錄固定版本保持原樣。
