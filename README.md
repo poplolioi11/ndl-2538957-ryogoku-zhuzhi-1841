@@ -1,10 +1,17 @@
-# 両國竹枝 · NDL2538957 · v0.2.0
+# 両國竹枝（1841年跋；NDL2538957）/ Ryōgoku chikushi: Transcription dataset
 
 ## 摘要 / Abstract
 
-本資料集封存日本國立國會圖書館藏NDL2538957、玉岡道人（森玉岡／森謙）1841年《両國竹枝》的全冊影像轉錄與AI複核成果。v0.2.0涵蓋18影像幀、34個可見書面（保守上限36），以初錄、獨立AI視讀與差異裁決嘗試，形成641個定位單位及保留不確定讀法的JSON、TXT、TEI XML與公開校讀紀錄，供檢索、引用與後續校訂。主控僅於明示範圍採納及核查關鍵影像，未重新辨讀每字；疑字與未知字數區域仍在，AI複核不構成人類專家定本，亦不承諾由公開包完整重跑原圖處理。
+《両國竹枝》是玉岡道人所作、帶1841年跋的江戶時期漢詩集，以竹枝體描寫兩國一帶的遊船、酒樓、歌舞與街市風物，並有序、題詩、插圖和讀書記號，可供日本漢詩、城市風俗與漢文訓讀研究。本資料依日本國立國會圖書館NDL2538957（842-68），保存全冊18幅影像、34個可見書面的轉錄及AI複核成果，提供641個定位單元的JSON、TXT、TEI XML與校讀紀錄。本版仍有疑字和未知字數缺區，尚非人類專家定本。
 
-This dataset archives full-volume image transcription and AI review of the 1841 《両國竹枝》 by 玉岡道人 (森玉岡／森謙), using National Diet Library item NDL2538957. Version 0.2.0 covers 18 image frames and 34 visible book surfaces (conservative upper bound 36). Initial transcription, independent AI visual reading and attempted disagreement adjudication produced 641 located units in JSON, TXT, TEI XML and public review records for retrieval, citation and further correction. The coordinating reviewer adopted decisions and checked key images only within stated bounds, without rereading every character. Unresolved readings and unknown-length regions remain. AI review is not an expert human edition, and complete rerunning of image processing from the public package is not promised.
+Ryōgoku chikushi, by Gyokukō Dōjin, is an Edo-period Sinitic verse collection with an 1841 postface, depicting boats, taverns, entertainments and streets around Ryōgoku in the bamboo-branch-song form, with prefatory verse, illustrations and reading marks. It supports research on Japanese Sinitic poetry, urban customs and kanbun reading. Using National Diet Library item NDL2538957 (842-68), this dataset preserves full-volume transcription and AI review across 18 images and 34 visible book surfaces in JSON, TXT, TEI XML and collation records with 641 located units. Uncertain readings and unknown-length gaps remain, and this is not an expert human edition.
+
+原件與書目入口 / Source witness and catalogue:
+
+- [館藏書目 / Catalogue](https://ndlsearch.ndl.go.jp/books/R100000002-I000007327370)
+- [原件／影像來源 / Source witness](https://dl.ndl.go.jp/pid/2538957)
+- [原件／影像來源 / Source witness](https://doi.org/10.11501/2538957)
+- [IIIF manifest](https://dl.ndl.go.jp/api/iiif/2538957/manifest.json)
 
 玉岡道人《両國竹枝》，天保十二年跋（1841）刊本，國立國會圖書館藏，索書號842-68。整理署名：**poplolioi11／一卦 yigua.art**。版本日期：2026-10-24（Asia/Taipei）。
 
