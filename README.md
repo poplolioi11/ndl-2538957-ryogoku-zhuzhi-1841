@@ -1,4 +1,4 @@
-# 両國竹枝（1841年跋；NDL2538957）/ Ryōgoku chikushi: Transcription dataset
+# 両國竹枝(1841年跋;NDL2538957) / Ryōgoku chikushi [Bamboo-branch poems of Ryōgoku]: Transcription dataset
 
 ## 摘要 / Abstract
 
@@ -12,6 +12,16 @@ Ryōgoku chikushi, by Gyokukō Dōjin, is an Edo-period Sinitic verse collection
 - [原件／影像來源 / Source witness](https://dl.ndl.go.jp/pid/2538957)
 - [原件／影像來源 / Source witness](https://doi.org/10.11501/2538957)
 - [IIIF manifest](https://dl.ndl.go.jp/api/iiif/2538957/manifest.json)
+
+### 題名與語言說明 / Title and language notes
+
+方括號英譯為編者意譯，非館目正式題名。Bracketed English titles are editorial discovery glosses, not official catalogue English titles.
+
+Ryōgoku chikushi 為依 NDL 假名「リョウゴクチクシ」所作編者日文羅馬字轉寫，並非中文拼音或館方正式英文題名。
+
+題名來源 / Title source: [https://ndlsearch.ndl.go.jp/books/R100000002-I000007327370](https://ndlsearch.ndl.go.jp/books/R100000002-I000007327370)
+
+語言補註 / Language note: NDL 館目原標 jpn，保留作來源層資訊。本輪依已公開的非操作性短摘錄與讀書記號證據分層標記：漢詩及漢文序文 lzh、日本語讀書記號 jpn、現行英文摘要 eng；此為有限證據下的編者語言標記，不表示完成整本校讀。The source catalogue records jpn. The deposited textual layers are identified as Classical Sinitic verse/preface (lzh), Japanese reading marks (jpn), and the current English abstract (eng), based on bounded public excerpts; this does not imply a complete reading of the book.
 
 玉岡道人《両國竹枝》，天保十二年跋（1841）刊本，國立國會圖書館藏，索書號842-68。整理署名：**poplolioi11／一卦 yigua.art**。版本日期：2026-10-24（Asia/Taipei）。
 
