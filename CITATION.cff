@@ -1,9 +1,12 @@
 cff-version: 1.2.0
 message: "請引用本資料DOI、版本與單位ID，並另引NDL原件；AI複核不等於專家定本。"
 type: dataset
-title: "両國竹枝（1841）：NDL2538957 分層影像轉錄與校勘"
+title: "両國竹枝(1841年跋;NDL2538957) / Ryōgoku chikushi [Bamboo-branch poems of Ryōgoku]: Transcription dataset"
 authors:
-  - name: "poplolioi11／一卦 yigua.art"
+  - family-names: Chu
+    given-names: Chen-Yu
+    orcid: https://orcid.org/0009-0003-9738-6914
+    website: https://github.com/poplolioi11
 version: "v0.2.0"
 date-released: "2026-10-24"
 doi: "10.5281/zenodo.23605862"
@@ -17,3 +20,21 @@ references:
       - name: "玉岡道人"
     year: 1841
     url: "https://doi.org/10.11501/2538957"
+keywords:
+  - "Hanwen"
+  - "両國竹枝"
+  - "両国竹枝"
+  - "Ryōgoku chikushi"
+  - "玉岡道人"
+  - "竹枝詞"
+  - "日本漢詩"
+  - "kanshi"
+  - "江戶時代"
+  - "Edo period"
+  - "Ryōgoku"
+  - "城市風俗"
+  - "漢文訓讀"
+  - "kanbun kundoku"
+  - "digital humanities"
+  - "TEI XML"
+  - "1841"

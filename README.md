@@ -6,6 +6,8 @@
 
 Ryōgoku chikushi, by Gyokukō Dōjin, is an Edo-period Sinitic verse collection with an 1841 postface, depicting boats, taverns, entertainments and streets around Ryōgoku in the bamboo-branch-song form, with prefatory verse, illustrations and reading marks. It supports research on Japanese Sinitic poetry, urban customs and kanbun reading. Using National Diet Library item NDL2538957 (842-68), this dataset preserves full-volume transcription and AI review across 18 images and 34 visible book surfaces in JSON, TXT, TEI XML and collation records with 641 located units. Uncertain readings and unknown-length gaps remain, and this is not an expert human edition.
 
+關鍵字 / Keywords: Hanwen; 両國竹枝; 両国竹枝; Ryōgoku chikushi; 玉岡道人; 竹枝詞; 日本漢詩; kanshi; 江戶時代; Edo period; Ryōgoku; 城市風俗; 漢文訓讀; kanbun kundoku; digital humanities; TEI XML; 1841.
+
 原件與書目入口 / Source witness and catalogue:
 
 - [館藏書目 / Catalogue](https://ndlsearch.ndl.go.jp/books/R100000002-I000007327370)
